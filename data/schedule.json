@@ -1,0 +1,1234 @@
+[
+  {
+    "date": "2026-06-12",
+    "stage": "Group A",
+    "homeTeam": "墨西哥",
+    "awayTeam": "南非",
+    "venue": "墨西哥城体育场",
+    "status": "settled",
+    "homeScore": 2,
+    "awayScore": 0,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-12",
+    "stage": "Group A",
+    "homeTeam": "韩国",
+    "awayTeam": "捷克",
+    "venue": "瓜达拉哈拉体育场",
+    "status": "settled",
+    "homeScore": 2,
+    "awayScore": 1,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-13",
+    "stage": "Group B",
+    "homeTeam": "加拿大",
+    "awayTeam": "波黑",
+    "venue": "多伦多体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {
+      "home_win": 1.61,
+      "draw": 3.36,
+      "away_win": 4.75
+    }
+  },
+  {
+    "date": "2026-06-13",
+    "stage": "Group D",
+    "homeTeam": "美国",
+    "awayTeam": "巴拉圭",
+    "venue": "洛杉矶体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {
+      "home_win": 1.79,
+      "draw": 3.25,
+      "away_win": 3.8
+    }
+  },
+  {
+    "date": "2026-06-14",
+    "stage": "Group B",
+    "homeTeam": "卡塔尔",
+    "awayTeam": "瑞士",
+    "venue": "旧金山湾区体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {
+      "home_win": 2.08,
+      "draw": 3.75,
+      "away_win": 2.62
+    }
+  },
+  {
+    "date": "2026-06-14",
+    "stage": "Group C",
+    "homeTeam": "巴西",
+    "awayTeam": "摩洛哥",
+    "venue": "纽约/新泽西体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {
+      "home_win": 1.51,
+      "draw": 3.55,
+      "away_win": 5.4
+    }
+  },
+  {
+    "date": "2026-06-14",
+    "stage": "Group C",
+    "homeTeam": "海地",
+    "awayTeam": "苏格兰",
+    "venue": "波士顿体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {
+      "home_win": 7.4,
+      "draw": 4.12,
+      "away_win": 1.33
+    }
+  },
+  {
+    "date": "2026-06-14",
+    "stage": "Group D",
+    "homeTeam": "澳大利亚",
+    "awayTeam": "土耳其",
+    "venue": "不列颠哥伦比亚广场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {
+      "home_win": 5.15,
+      "draw": 3.45,
+      "away_win": 1.55
+    }
+  },
+  {
+    "date": "2026-06-15",
+    "stage": "Group E",
+    "homeTeam": "德国",
+    "awayTeam": "库拉索",
+    "venue": "休斯顿体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {
+      "home_win": 1.9,
+      "draw": 4.6,
+      "away_win": 2.59
+    }
+  },
+  {
+    "date": "2026-06-15",
+    "stage": "Group E",
+    "homeTeam": "科特迪瓦",
+    "awayTeam": "厄瓜多尔",
+    "venue": "费城体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {
+      "home_win": 3.36,
+      "draw": 2.65,
+      "away_win": 2.2
+    }
+  },
+  {
+    "date": "2026-06-15",
+    "stage": "Group F",
+    "homeTeam": "荷兰",
+    "awayTeam": "日本",
+    "venue": "达拉斯体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {
+      "home_win": 1.78,
+      "draw": 3.3,
+      "away_win": 3.78
+    }
+  },
+  {
+    "date": "2026-06-15",
+    "stage": "Group F",
+    "homeTeam": "瑞典",
+    "awayTeam": "突尼斯",
+    "venue": "蒙特雷体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {
+      "home_win": 1.71,
+      "draw": 3.15,
+      "away_win": 4.4
+    }
+  },
+  {
+    "date": "2026-06-16",
+    "stage": "Group G",
+    "homeTeam": "比利时",
+    "awayTeam": "埃及",
+    "venue": "西雅图体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {
+      "home_win": 1.45,
+      "draw": 3.72,
+      "away_win": 5.85
+    }
+  },
+  {
+    "date": "2026-06-16",
+    "stage": "Group G",
+    "homeTeam": "伊朗",
+    "awayTeam": "新西兰",
+    "venue": "洛杉矶体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {
+      "home_win": 1.56,
+      "draw": 3.3,
+      "away_win": 5.4
+    }
+  },
+  {
+    "date": "2026-06-16",
+    "stage": "Group H",
+    "homeTeam": "西班牙",
+    "awayTeam": "佛得角",
+    "venue": "亚特兰大体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {
+      "home_win": 1.8,
+      "draw": 4.05,
+      "away_win": 3.06
+    }
+  },
+  {
+    "date": "2026-06-16",
+    "stage": "Group H",
+    "homeTeam": "沙特",
+    "awayTeam": "乌拉圭",
+    "venue": "迈阿密体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {
+      "home_win": 7.65,
+      "draw": 4.25,
+      "away_win": 1.31
+    }
+  },
+  {
+    "date": "2026-06-17",
+    "stage": "Group I",
+    "homeTeam": "法国",
+    "awayTeam": "塞内加尔",
+    "venue": "纽约/新泽西体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {
+      "home_win": 1.37,
+      "draw": 3.95,
+      "away_win": 6.85
+    }
+  },
+  {
+    "date": "2026-06-17",
+    "stage": "Group I",
+    "homeTeam": "伊拉克",
+    "awayTeam": "挪威",
+    "venue": "波士顿体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {
+      "home_win": 2.09,
+      "draw": 3.89,
+      "away_win": 2.54
+    }
+  },
+  {
+    "date": "2026-06-17",
+    "stage": "Group J",
+    "homeTeam": "阿根廷",
+    "awayTeam": "阿尔及利",
+    "venue": "堪萨斯城体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {
+      "home_win": 1.27,
+      "draw": 4.35,
+      "away_win": 8.9
+    }
+  },
+  {
+    "date": "2026-06-17",
+    "stage": "Group J",
+    "homeTeam": "奥地利",
+    "awayTeam": "约旦",
+    "venue": "旧金山湾区体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {
+      "home_win": 1.22,
+      "draw": 5.0,
+      "away_win": 9.1
+    }
+  },
+  {
+    "date": "2026-06-18",
+    "stage": "Group K",
+    "homeTeam": "葡萄牙",
+    "awayTeam": "民主刚果",
+    "venue": "休斯顿体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {
+      "home_win": 1.14,
+      "draw": 5.7,
+      "away_win": 13.0
+    }
+  },
+  {
+    "date": "2026-06-18",
+    "stage": "Group K",
+    "homeTeam": "乌兹别克",
+    "awayTeam": "哥伦比亚",
+    "venue": "墨西哥城体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {
+      "home_win": 9.1,
+      "draw": 4.55,
+      "away_win": 1.25
+    }
+  },
+  {
+    "date": "2026-06-18",
+    "stage": "Group L",
+    "homeTeam": "英格兰",
+    "awayTeam": "克罗地亚",
+    "venue": "达拉斯体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {
+      "home_win": 1.55,
+      "draw": 3.4,
+      "away_win": 5.25
+    }
+  },
+  {
+    "date": "2026-06-18",
+    "stage": "Group L",
+    "homeTeam": "加纳",
+    "awayTeam": "巴拿马",
+    "venue": "多伦多体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {
+      "home_win": 1.93,
+      "draw": 3.0,
+      "away_win": 3.6
+    }
+  },
+  {
+    "date": "2026-06-19",
+    "stage": "Group A",
+    "homeTeam": "捷克",
+    "awayTeam": "南非",
+    "venue": "亚特兰大体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-19",
+    "stage": "Group A",
+    "homeTeam": "墨西哥",
+    "awayTeam": "韩国",
+    "venue": "瓜达拉哈拉体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-19",
+    "stage": "Group B",
+    "homeTeam": "瑞士",
+    "awayTeam": "波黑",
+    "venue": "洛杉矶体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-19",
+    "stage": "Group B",
+    "homeTeam": "加拿大",
+    "awayTeam": "卡塔尔",
+    "venue": "不列颠哥伦比亚广场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-20",
+    "stage": "Group C",
+    "homeTeam": "苏格兰",
+    "awayTeam": "摩洛哥",
+    "venue": "波士顿体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-20",
+    "stage": "Group C",
+    "homeTeam": "巴西",
+    "awayTeam": "海地",
+    "venue": "费城体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-20",
+    "stage": "Group D",
+    "homeTeam": "美国",
+    "awayTeam": "澳大利亚",
+    "venue": "西雅图体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-20",
+    "stage": "Group D",
+    "homeTeam": "土耳其",
+    "awayTeam": "巴拉圭",
+    "venue": "旧金山湾区体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-21",
+    "stage": "Group E",
+    "homeTeam": "德国",
+    "awayTeam": "科特迪瓦",
+    "venue": "多伦多体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-21",
+    "stage": "Group E",
+    "homeTeam": "厄瓜多尔",
+    "awayTeam": "库拉索",
+    "venue": "堪萨斯城体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-21",
+    "stage": "Group F",
+    "homeTeam": "荷兰",
+    "awayTeam": "瑞典",
+    "venue": "休斯顿体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-21",
+    "stage": "Group F",
+    "homeTeam": "突尼斯",
+    "awayTeam": "日本",
+    "venue": "蒙特雷体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-22",
+    "stage": "Group G",
+    "homeTeam": "比利时",
+    "awayTeam": "伊朗",
+    "venue": "洛杉矶体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-22",
+    "stage": "Group G",
+    "homeTeam": "新西兰",
+    "awayTeam": "埃及",
+    "venue": "不列颠哥伦比亚广场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-22",
+    "stage": "Group H",
+    "homeTeam": "西班牙",
+    "awayTeam": "沙特",
+    "venue": "亚特兰大体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-22",
+    "stage": "Group H",
+    "homeTeam": "乌拉圭",
+    "awayTeam": "佛得角",
+    "venue": "硬石体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-23",
+    "stage": "Group I",
+    "homeTeam": "法国",
+    "awayTeam": "伊拉克",
+    "venue": "费城体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-23",
+    "stage": "Group I",
+    "homeTeam": "挪威",
+    "awayTeam": "塞内加尔",
+    "venue": "纽约/新泽西体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-23",
+    "stage": "Group J",
+    "homeTeam": "阿根廷",
+    "awayTeam": "奥地利",
+    "venue": "达拉斯体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-23",
+    "stage": "Group J",
+    "homeTeam": "约旦",
+    "awayTeam": "阿尔及利",
+    "venue": "旧金山湾区体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-24",
+    "stage": "Group K",
+    "homeTeam": "葡萄牙",
+    "awayTeam": "乌兹别克",
+    "venue": "休斯顿体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-24",
+    "stage": "Group K",
+    "homeTeam": "哥伦比亚",
+    "awayTeam": "民主刚果",
+    "venue": "瓜达拉哈拉体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-24",
+    "stage": "Group L",
+    "homeTeam": "英格兰",
+    "awayTeam": "加纳",
+    "venue": "波士顿体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-24",
+    "stage": "Group L",
+    "homeTeam": "巴拿马",
+    "awayTeam": "克罗地亚",
+    "venue": "多伦多体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-25",
+    "stage": "Group A",
+    "homeTeam": "捷克",
+    "awayTeam": "墨西哥",
+    "venue": "墨西哥城体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-25",
+    "stage": "Group A",
+    "homeTeam": "南非",
+    "awayTeam": "韩国",
+    "venue": "蒙特雷体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-25",
+    "stage": "Group B",
+    "homeTeam": "瑞士",
+    "awayTeam": "加拿大",
+    "venue": "不列颠哥伦比亚广场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-25",
+    "stage": "Group B",
+    "homeTeam": "波黑",
+    "awayTeam": "卡塔尔",
+    "venue": "西雅图体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-25",
+    "stage": "Group C",
+    "homeTeam": "苏格兰",
+    "awayTeam": "巴西",
+    "venue": "硬石体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-25",
+    "stage": "Group C",
+    "homeTeam": "摩洛哥",
+    "awayTeam": "海地",
+    "venue": "亚特兰大体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-26",
+    "stage": "Group D",
+    "homeTeam": "土耳其",
+    "awayTeam": "美国",
+    "venue": "洛杉矶体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-26",
+    "stage": "Group D",
+    "homeTeam": "巴拉圭",
+    "awayTeam": "澳大利亚",
+    "venue": "旧金山湾区体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-26",
+    "stage": "Group E",
+    "homeTeam": "厄瓜多尔",
+    "awayTeam": "德国",
+    "venue": "纽约/新泽西体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-26",
+    "stage": "Group E",
+    "homeTeam": "库拉索",
+    "awayTeam": "科特迪瓦",
+    "venue": "费城体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-26",
+    "stage": "Group F",
+    "homeTeam": "突尼斯",
+    "awayTeam": "荷兰",
+    "venue": "堪萨斯城体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-26",
+    "stage": "Group F",
+    "homeTeam": "日本",
+    "awayTeam": "瑞典",
+    "venue": "达拉斯体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-27",
+    "stage": "Group G",
+    "homeTeam": "新西兰",
+    "awayTeam": "比利时",
+    "venue": "不列颠哥伦比亚广场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-27",
+    "stage": "Group G",
+    "homeTeam": "埃及",
+    "awayTeam": "伊朗",
+    "venue": "西雅图体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-27",
+    "stage": "Group H",
+    "homeTeam": "乌拉圭",
+    "awayTeam": "西班牙",
+    "venue": "瓜达拉哈拉体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-27",
+    "stage": "Group H",
+    "homeTeam": "佛得角",
+    "awayTeam": "沙特",
+    "venue": "休斯顿体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-27",
+    "stage": "Group I",
+    "homeTeam": "挪威",
+    "awayTeam": "法国",
+    "venue": "波士顿体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-27",
+    "stage": "Group I",
+    "homeTeam": "塞内加尔",
+    "awayTeam": "伊拉克",
+    "venue": "多伦多体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-28",
+    "stage": "Group J",
+    "homeTeam": "约旦",
+    "awayTeam": "阿根廷",
+    "venue": "达拉斯体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-28",
+    "stage": "Group J",
+    "homeTeam": "阿尔及利",
+    "awayTeam": "奥地利",
+    "venue": "堪萨斯城体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-28",
+    "stage": "Group K",
+    "homeTeam": "哥伦比亚",
+    "awayTeam": "葡萄牙",
+    "venue": "硬石体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-28",
+    "stage": "Group K",
+    "homeTeam": "民主刚果",
+    "awayTeam": "乌兹别克",
+    "venue": "亚特兰大体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-28",
+    "stage": "Group L",
+    "homeTeam": "巴拿马",
+    "awayTeam": "英格兰",
+    "venue": "纽约/新泽西体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-28",
+    "stage": "Group L",
+    "homeTeam": "克罗地亚",
+    "awayTeam": "加纳",
+    "venue": "费城体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-29",
+    "stage": "Round of 32",
+    "homeTeam": "A2",
+    "awayTeam": "B2",
+    "venue": "洛杉矶体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-30",
+    "stage": "Round of 32",
+    "homeTeam": "C1",
+    "awayTeam": "F2",
+    "venue": "休斯顿体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-30",
+    "stage": "Round of 32",
+    "homeTeam": "E1",
+    "awayTeam": "A3/B3/C3/D3/F3",
+    "venue": "波士顿体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-06-30",
+    "stage": "Round of 32",
+    "homeTeam": "F1",
+    "awayTeam": "C2",
+    "venue": "蒙特雷体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-07-01",
+    "stage": "Round of 32",
+    "homeTeam": "E2",
+    "awayTeam": "I2",
+    "venue": "达拉斯体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-07-01",
+    "stage": "Round of 32",
+    "homeTeam": "I1",
+    "awayTeam": "C3/D3/F3/G3/H3",
+    "venue": "纽约/新泽西体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-07-01",
+    "stage": "Round of 32",
+    "homeTeam": "A1",
+    "awayTeam": "C3/E3/F3/H3/I3",
+    "venue": "墨西哥城体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-07-02",
+    "stage": "Round of 32",
+    "homeTeam": "L1",
+    "awayTeam": "E3/H3/I3/J3/K3",
+    "venue": "亚特兰大体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-07-02",
+    "stage": "Round of 32",
+    "homeTeam": "G1",
+    "awayTeam": "A3/E3/H3/I3/J3",
+    "venue": "西雅图体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-07-02",
+    "stage": "Round of 32",
+    "homeTeam": "D1",
+    "awayTeam": "B3/E3/F3/I3/J3",
+    "venue": "旧金山湾区体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-07-03",
+    "stage": "Round of 32",
+    "homeTeam": "H1",
+    "awayTeam": "J2",
+    "venue": "洛杉矶体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-07-03",
+    "stage": "Round of 32",
+    "homeTeam": "K2",
+    "awayTeam": "L2",
+    "venue": "多伦多体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-07-03",
+    "stage": "Round of 32",
+    "homeTeam": "B1",
+    "awayTeam": "E3/F3/G3/I3/J3",
+    "venue": "不列颠哥伦比亚广场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-07-04",
+    "stage": "Round of 32",
+    "homeTeam": "D2",
+    "awayTeam": "G2",
+    "venue": "达拉斯体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-07-04",
+    "stage": "Round of 32",
+    "homeTeam": "J1",
+    "awayTeam": "H2",
+    "venue": "迈阿密体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-07-04",
+    "stage": "Round of 32",
+    "homeTeam": "K1",
+    "awayTeam": "D3/E3/I3/J3/L3",
+    "venue": "堪萨斯城体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-07-05",
+    "stage": "Round of 16",
+    "homeTeam": "第1场1/16决赛胜者",
+    "awayTeam": "第3场1/16决赛胜者",
+    "venue": "休斯顿体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-07-05",
+    "stage": "Round of 16",
+    "homeTeam": "第2场1/16决赛胜者",
+    "awayTeam": "第5场1/16决赛胜者",
+    "venue": "费城体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-07-06",
+    "stage": "Round of 16",
+    "homeTeam": "第4场1/16决赛胜者",
+    "awayTeam": "第6场1/16决赛胜者",
+    "venue": "纽约/新泽西体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-07-06",
+    "stage": "Round of 16",
+    "homeTeam": "第7场1/16决赛胜者",
+    "awayTeam": "第8场1/16决赛胜者",
+    "venue": "墨西哥城体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-07-07",
+    "stage": "Round of 16",
+    "homeTeam": "第11场1/16决赛胜者",
+    "awayTeam": "第12场1/16决赛胜者",
+    "venue": "达拉斯体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-07-07",
+    "stage": "Round of 16",
+    "homeTeam": "第9场1/16决赛胜者",
+    "awayTeam": "第10场1/16决赛胜者",
+    "venue": "西雅图体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-07-08",
+    "stage": "Round of 16",
+    "homeTeam": "第14场1/16决赛胜者",
+    "awayTeam": "第16场1/16决赛胜者",
+    "venue": "亚特兰大体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-07-08",
+    "stage": "Round of 16",
+    "homeTeam": "第13场1/16决赛胜者",
+    "awayTeam": "第15场1/16决赛胜者",
+    "venue": "不列颠哥伦比亚广场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-07-10",
+    "stage": "Quarter-final",
+    "homeTeam": "第1场1/8决赛胜者",
+    "awayTeam": "第2场1/8决赛胜者",
+    "venue": "波士顿体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-07-11",
+    "stage": "Quarter-final",
+    "homeTeam": "第5场1/8决赛胜者",
+    "awayTeam": "第6场1/8决赛胜者",
+    "venue": "洛杉矶体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-07-12",
+    "stage": "Quarter-final",
+    "homeTeam": "第3场1/8决赛胜者",
+    "awayTeam": "第4场1/8决赛胜者",
+    "venue": "迈阿密体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-07-12",
+    "stage": "Quarter-final",
+    "homeTeam": "第7场1/8决赛胜者",
+    "awayTeam": "第8场1/8决赛胜者",
+    "venue": "堪萨斯城体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-07-15",
+    "stage": "Semi-final",
+    "homeTeam": "第1场1/4决赛胜者",
+    "awayTeam": "第2场1/4决赛胜者",
+    "venue": "达拉斯体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-07-16",
+    "stage": "Semi-final",
+    "homeTeam": "第3场1/4决赛胜者",
+    "awayTeam": "第4场1/4决赛胜者",
+    "venue": "亚特兰大体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-07-19",
+    "stage": "Third Place",
+    "homeTeam": "第1场半决赛败者",
+    "awayTeam": "第2场半决赛败者",
+    "venue": "迈阿密体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  },
+  {
+    "date": "2026-07-20",
+    "stage": "Final",
+    "homeTeam": "第1场半决赛胜者",
+    "awayTeam": "第2场半决赛胜者",
+    "venue": "纽约/新泽西体育场",
+    "status": "upcoming",
+    "homeScore": null,
+    "awayScore": null,
+    "odds": {}
+  }
+]

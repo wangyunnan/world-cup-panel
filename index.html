@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026 FIFA World Cup - Betting Panel</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <h1>&#9917; 2026 FIFA World Cup Betting Panel</h1>
+    <p class="subtitle">USA / Canada / Mexico &middot; June 11 - July 19, 2026</p>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- Dashboard Summary -->
+  <section class="dashboard" id="dashboard">
+    <div class="stat-card">
+      <div class="stat-label">Total Bets</div>
+      <div class="stat-value" id="stat-total-bets">0</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Total Wagered</div>
+      <div class="stat-value" id="stat-total-wagered">&yen;0</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Total Profit</div>
+      <div class="stat-value" id="stat-total-profit">&yen;0</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Win Rate</div>
+      <div class="stat-value" id="stat-win-rate">0%</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">ROI</div>
+      <div class="stat-value" id="stat-roi">0%</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Streak</div>
+      <div class="stat-value" id="stat-streak">-</div>
+    </div>
+  </section>
+
+  <!-- Filters & Actions -->
+  <section class="toolbar">
+    <div class="filters">
+      <select id="filter-stage">
+        <option value="">All Stages</option>
+      </select>
+      <select id="filter-team">
+        <option value="">All Teams</option>
+      </select>
+      <select id="filter-status">
+        <option value="">All Status</option>
+        <option value="pending">Pending</option>
+        <option value="settled">Settled</option>
+      </select>
+      <select id="filter-result">
+        <option value="">All Results</option>
+        <option value="win">Won</option>
+        <option value="lose">Lost</option>
+      </select>
+    </div>
+    <div class="actions">
+      <button class="btn btn-primary" id="btn-add-bet">+ Add Bet</button>
+      <button class="btn btn-github" id="btn-sync" title="Sync to GitHub">&#x2191; Sync</button>
+      <button class="btn btn-github" id="btn-pull" title="Pull from GitHub">&#x2193; Pull</button>
+      <button class="btn btn-secondary" id="btn-settings" title="GitHub Settings">&#x2699;</button>
+    </div>
+  </section>
+
+  <!-- Bet Table -->
+  <section class="table-wrapper">
+    <table class="bet-table" id="bet-table">
+      <thead>
+        <tr>
+          <th data-sort="matchDate">Date &#x25B4;&#x25BE;</th>
+          <th>Stage</th>
+          <th>Match</th>
+          <th>Bet Type</th>
+          <th>Prediction</th>
+          <th>Actual</th>
+          <th data-sort="odds">Odds &#x25B4;&#x25BE;</th>
+          <th data-sort="amount">Amount &#x25B4;&#x25BE;</th>
+          <th data-sort="profit">Profit &#x25B4;&#x25BE;</th>
+          <th>Confidence</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="bet-table-body">
+      </tbody>
+    </table>
+    <div class="empty-state" id="empty-state" style="display:none;">
+      No bets found. Click "+ Add Bet" to get started!
+    </div>
+  </section>
+
+  <!-- Statistics Panel -->
+  <section class="stats-panel" id="stats-panel">
+    <h2>Statistics</h2>
+    <div class="charts-grid">
+      <div class="chart-card">
+        <h3>Cumulative Profit</h3>
+        <canvas id="chart-profit" width="400" height="280"></canvas>
+      </div>
+      <div class="chart-card">
+        <h3>Win Rate by Bet Type</h3>
+        <canvas id="chart-winrate" width="400" height="280"></canvas>
+      </div>
+      <div class="chart-card">
+        <h3>Team Performance</h3>
+        <div id="team-stats" class="team-stats-list"></div>
+      </div>
+      <div class="chart-card">
+        <h3>Bet Amount Distribution</h3>
+        <canvas id="chart-distribution" width="400" height="280"></canvas>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Add/Edit Bet Modal (unified: Single + Parlay) -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal" id="bet-modal">
+    <div class="modal-header">
+      <h2 id="modal-title">Add Bet</h2>
+      <button class="modal-close" id="modal-close">&times;</button>
+    </div>
+
+    <!-- Mode Tabs -->
+    <div class="mode-tabs" id="mode-tabs">
+      <button class="mode-tab active" data-mode="single">Single</button>
+      <button class="mode-tab" data-mode="parlay">Parlay</button>
+    </div>
+
+    <!-- === Single Bet Form === -->
+    <form id="bet-form" class="bet-form" data-mode-section="single">
+      <input type="hidden" id="form-id">
+
+      <div class="form-group">
+        <label for="form-match-picker">Quick Pick Match</label>
+        <select id="form-match-picker">
+          <option value="">-- Select a match --</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="form-date">Match Date</label>
+          <input type="date" id="form-date" required>
+        </div>
+        <div class="form-group">
+          <label for="form-stage">Stage</label>
+          <select id="form-stage" required>
+            <option value="">Select...</option>
+            <option value="Group A">Group A</option>
+            <option value="Group B">Group B</option>
+            <option value="Group C">Group C</option>
+            <option value="Group D">Group D</option>
+            <option value="Group E">Group E</option>
+            <option value="Group F">Group F</option>
+            <option value="Group G">Group G</option>
+            <option value="Group H">Group H</option>
+            <option value="Group I">Group I</option>
+            <option value="Group J">Group J</option>
+            <option value="Group K">Group K</option>
+            <option value="Group L">Group L</option>
+            <option value="Round of 32">Round of 32</option>
+            <option value="Round of 16">Round of 16</option>
+            <option value="Quarter-final">Quarter-final</option>
+            <option value="Semi-final">Semi-final</option>
+            <option value="Third Place">Third Place</option>
+            <option value="Final">Final</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="form-home-team">Home Team</label>
+          <input type="text" id="form-home-team" required placeholder="e.g. Mexico">
+        </div>
+        <div class="form-group">
+          <label for="form-away-team">Away Team</label>
+          <input type="text" id="form-away-team" required placeholder="e.g. Jamaica">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="form-bet-type">Bet Type</label>
+          <select id="form-bet-type" required>
+            <option value="result">全场胜平负</option>
+            <option value="score">全场比分</option>
+            <option value="total_goals">总进球数</option>
+            <option value="half_full">半全场胜平负</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="form-confidence">Confidence</label>
+          <select id="form-confidence">
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+            <option value="low">Low</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group" id="form-pred-score-group">
+          <label>Predicted Score</label>
+          <div class="score-input">
+            <input type="number" id="form-pred-home" min="0" placeholder="H">
+            <span class="score-sep">:</span>
+            <input type="number" id="form-pred-away" min="0" placeholder="A">
+          </div>
+        </div>
+        <div class="form-group" id="form-pred-wdl-group" style="display:none;">
+          <label>Prediction</label>
+          <select id="form-pred-wdl">
+            <option value="win">胜</option>
+            <option value="draw">平</option>
+            <option value="lose">负</option>
+          </select>
+        </div>
+        <div class="form-group" id="form-pred-halffull-group" style="display:none;">
+          <label>Prediction (半场-全场)</label>
+          <select id="form-pred-halffull">
+            <option value="胜-胜">胜-胜</option>
+            <option value="胜-平">胜-平</option>
+            <option value="胜-负">胜-负</option>
+            <option value="平-胜">平-胜</option>
+            <option value="平-平">平-平</option>
+            <option value="平-负">平-负</option>
+            <option value="负-胜">负-胜</option>
+            <option value="负-平">负-平</option>
+            <option value="负-负">负-负</option>
+          </select>
+        </div>
+        <div class="form-group" id="form-pred-goals-group" style="display:none;">
+          <label>Predicted Total Goals</label>
+          <input type="number" id="form-pred-goals" min="0" placeholder="e.g. 3">
+        </div>
+        <div class="form-group" id="form-actual-score-group">
+          <label>Actual Score + 让球 <small>(leave empty if pending)</small></label>
+          <div class="score-handicap-row">
+            <div class="score-input">
+              <input type="number" id="form-actual-home" min="0" placeholder="H">
+              <span class="score-sep">:</span>
+              <input type="number" id="form-actual-away" min="0" placeholder="A">
+            </div>
+            <span class="score-sep">让</span>
+            <input type="number" id="form-handicap" step="1" value="0" placeholder="0" title="让球数 (0=不让球)" class="handicap-field">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="form-odds">Odds</label>
+          <input type="number" id="form-odds" step="0.01" min="1" required placeholder="e.g. 2.50">
+        </div>
+        <div class="form-group" id="form-actual-halffull-group" style="display:none;">
+          <label>Actual Result (半场-全场)</label>
+          <select id="form-actual-halffull">
+            <option value="">-- pending --</option>
+            <option value="胜-胜">胜-胜</option>
+            <option value="胜-平">胜-平</option>
+            <option value="胜-负">胜-负</option>
+            <option value="平-胜">平-胜</option>
+            <option value="平-平">平-平</option>
+            <option value="平-负">平-负</option>
+            <option value="负-胜">负-胜</option>
+            <option value="负-平">负-平</option>
+            <option value="负-负">负-负</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="form-amount">Bet Amount (CNY)</label>
+          <input type="number" id="form-amount" step="1" min="1" required placeholder="e.g. 100">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="form-notes">Notes</label>
+        <textarea id="form-notes" rows="2" placeholder="Optional notes..."></textarea>
+      </div>
+
+      <div class="form-summary" id="form-summary" style="display:none;">
+        <div class="summary-item">
+          <span>Potential Payout:</span>
+          <span id="form-payout">-</span>
+        </div>
+        <div class="summary-item">
+          <span>Actual Profit:</span>
+          <span id="form-profit">-</span>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="button" class="btn btn-danger" id="btn-delete-bet" style="display:none;">Delete</button>
+        <div class="form-actions-right">
+          <button type="button" class="btn btn-secondary" id="btn-cancel">Cancel</button>
+          <button type="submit" class="btn btn-primary" id="btn-save">Save Bet</button>
+        </div>
+      </div>
+    </form>
+
+    <!-- === Parlay Form === -->
+    <div id="parlay-form" class="bet-form" data-mode-section="parlay" style="display:none;">
+
+      <!-- Leg Input -->
+      <div class="parlay-leg-form">
+        <h3 class="parlay-leg-form-title">Add Match to Parlay</h3>
+        <div class="form-group">
+          <label for="parlay-match-picker">Quick Pick Match</label>
+          <select id="parlay-match-picker">
+            <option value="">-- Select a match --</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="parlay-leg-date">Match Date</label>
+            <input type="date" id="parlay-leg-date">
+          </div>
+          <div class="form-group">
+            <label for="parlay-leg-stage">Stage</label>
+            <select id="parlay-leg-stage">
+              <option value="">Select...</option>
+              <option value="Group A">Group A</option>
+              <option value="Group B">Group B</option>
+              <option value="Group C">Group C</option>
+              <option value="Group D">Group D</option>
+              <option value="Group E">Group E</option>
+              <option value="Group F">Group F</option>
+              <option value="Group G">Group G</option>
+              <option value="Group H">Group H</option>
+              <option value="Group I">Group I</option>
+              <option value="Group J">Group J</option>
+              <option value="Group K">Group K</option>
+              <option value="Group L">Group L</option>
+              <option value="Round of 32">Round of 32</option>
+              <option value="Round of 16">Round of 16</option>
+              <option value="Quarter-final">Quarter-final</option>
+              <option value="Semi-final">Semi-final</option>
+              <option value="Third Place">Third Place</option>
+              <option value="Final">Final</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="parlay-leg-home">Home Team</label>
+            <input type="text" id="parlay-leg-home" placeholder="e.g. Mexico">
+          </div>
+          <div class="form-group">
+            <label for="parlay-leg-away">Away Team</label>
+            <input type="text" id="parlay-leg-away" placeholder="e.g. Jamaica">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="parlay-leg-bet-type">Bet Type</label>
+            <select id="parlay-leg-bet-type">
+              <option value="result">全场胜平负</option>
+              <option value="score">全场比分</option>
+              <option value="total_goals">总进球数</option>
+              <option value="half_full">半全场胜平负</option>
+            </select>
+          </div>
+          <div class="form-group" id="parlay-pred-score-group">
+            <label>Predicted Score</label>
+            <div class="score-input">
+              <input type="number" id="parlay-leg-pred-home" min="0" placeholder="H">
+              <span class="score-sep">:</span>
+              <input type="number" id="parlay-leg-pred-away" min="0" placeholder="A">
+            </div>
+          </div>
+          <div class="form-group" id="parlay-pred-wdl-group" style="display:none;">
+            <label>Prediction</label>
+            <select id="parlay-leg-pred-wdl">
+              <option value="win">胜</option>
+              <option value="draw">平</option>
+              <option value="lose">负</option>
+            </select>
+          </div>
+          <div class="form-group" id="parlay-pred-halffull-group" style="display:none;">
+            <label>Prediction (半场-全场)</label>
+            <select id="parlay-leg-pred-halffull">
+              <option value="胜-胜">胜-胜</option>
+              <option value="胜-平">胜-平</option>
+              <option value="胜-负">胜-负</option>
+              <option value="平-胜">平-胜</option>
+              <option value="平-平">平-平</option>
+              <option value="平-负">平-负</option>
+              <option value="负-胜">负-胜</option>
+              <option value="负-平">负-平</option>
+              <option value="负-负">负-负</option>
+            </select>
+          </div>
+          <div class="form-group" id="parlay-pred-goals-group" style="display:none;">
+            <label>Predicted Total Goals</label>
+            <input type="number" id="parlay-leg-pred-goals" min="0" placeholder="e.g. 3">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="parlay-leg-odds">Odds</label>
+            <input type="number" id="parlay-leg-odds" step="0.01" min="1" placeholder="e.g. 2.50">
+          </div>
+          <div class="form-group" id="parlay-actual-halffull-group" style="display:none;">
+            <label>Actual Result (半场-全场)</label>
+            <select id="parlay-leg-actual-halffull">
+              <option value="">-- pending --</option>
+              <option value="胜-胜">胜-胜</option>
+              <option value="胜-平">胜-平</option>
+              <option value="胜-负">胜-负</option>
+              <option value="平-胜">平-胜</option>
+              <option value="平-平">平-平</option>
+              <option value="平-负">平-负</option>
+              <option value="负-胜">负-胜</option>
+              <option value="负-平">负-平</option>
+              <option value="负-负">负-负</option>
+            </select>
+          </div>
+          <div class="form-group" id="parlay-actual-score-group">
+            <label>Actual Score + 让球 <small>(leave empty if pending)</small></label>
+            <div class="score-handicap-row">
+              <div class="score-input">
+                <input type="number" id="parlay-leg-actual-home" min="0" placeholder="H">
+                <span class="score-sep">:</span>
+                <input type="number" id="parlay-leg-actual-away" min="0" placeholder="A">
+              </div>
+              <span class="score-sep">让</span>
+              <input type="number" id="parlay-leg-handicap" step="1" value="0" placeholder="0" title="让球数 (0=不让球)" class="handicap-field">
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-add-leg" id="btn-add-leg">+ Add to Parlay</button>
+      </div>
+
+      <!-- Added Legs List -->
+      <div class="parlay-legs-list" id="parlay-legs-list">
+        <div class="parlay-legs-empty" id="parlay-legs-empty">No matches added yet. Add at least 2 matches above.</div>
+      </div>
+
+      <!-- Parlay Summary -->
+      <div class="parlay-summary" id="parlay-summary" style="display:none;">
+        <div class="summary-item">
+          <span>Parlay Type:</span>
+          <span id="parlay-type-label">-</span>
+        </div>
+        <div class="summary-item">
+          <span>Combined Odds:</span>
+          <span id="parlay-combined-odds">-</span>
+        </div>
+        <div class="form-row" style="margin-bottom:0;">
+          <div class="form-group">
+            <label for="parlay-amount">Bet Amount (CNY)</label>
+            <input type="number" id="parlay-amount" step="1" min="1" placeholder="e.g. 100">
+          </div>
+          <div class="form-group">
+            <label for="parlay-confidence">Confidence</label>
+            <select id="parlay-confidence">
+              <option value="medium">Medium</option>
+              <option value="high">High</option>
+              <option value="low">Low</option>
+            </select>
+          </div>
+        </div>
+        <div class="summary-item">
+          <span>Potential Payout:</span>
+          <span id="parlay-potential-payout">-</span>
+        </div>
+        <div class="form-group">
+          <label for="parlay-notes">Notes</label>
+          <textarea id="parlay-notes" rows="2" placeholder="Optional notes..."></textarea>
+        </div>
+      </div>
+
+      <!-- Actions -->
+      <div class="form-actions">
+        <button type="button" class="btn btn-danger" id="btn-delete-parlay" style="display:none;">Delete</button>
+        <div class="form-actions-right">
+          <button type="button" class="btn btn-secondary" id="parlay-btn-cancel">Cancel</button>
+          <button type="button" class="btn btn-primary" id="parlay-btn-save">Save Parlay</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <p>2026 FIFA World Cup Betting Panel &middot; Data syncs to GitHub via API</p>
+</footer>
+
+<!-- GitHub Settings Modal -->
+<div class="modal-overlay" id="settings-overlay">
+  <div class="modal" id="settings-modal">
+    <div class="modal-header">
+      <h2>Personal Access Token</h2>
+      <button class="modal-close" id="settings-close">&times;</button>
+    </div>
+    <form id="settings-form" class="bet-form">
+      <div class="form-group">
+        <input type="password" id="gh-token" placeholder="ghp_xxxxxxxxxxxx" required>
+      </div>
+      <div class="form-actions">
+        <span id="gh-status" class="gh-status"></span>
+        <div class="form-actions-right">
+          <button type="button" class="btn btn-secondary" id="settings-cancel">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Sync Status Toast -->
+<div class="toast" id="toast"></div>
+
+<script src="js/github.js"></script>
+<script src="js/stats.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

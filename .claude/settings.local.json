@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl *)",
+      "Bash(python3 -m json.tool)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(d.get\\('Results',[]\\).__len__\\(\\) if 'Results' in d else d\\)\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(type\\(d\\), list\\(d.keys\\(\\)\\) if isinstance\\(d,dict\\) else len\\(d\\)\\)\")",
+      "Bash(python3 *)"
+    ]
+  }
+}
