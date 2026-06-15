@@ -77,11 +77,12 @@ const GitHub = {
 
   async pullBets() {
     const token = this.getToken();
-    if (!token) throw new Error('Token not set');
+    const headers = { Accept: 'application/vnd.github.v3+json' };
+    if (token) headers.Authorization = `token ${token}`;
 
     const res = await fetch(
       `https://api.github.com/repos/${this.OWNER}/${this.REPO}/contents/${this.PATH}?ref=${this.BRANCH}`,
-      { headers: { Authorization: `token ${token}`, Accept: 'application/vnd.github.v3+json' } }
+      { headers }
     );
 
     if (!res.ok) {

@@ -27,24 +27,36 @@ const App = {
     }
 
     const stored = localStorage.getItem('worldcup_bets');
+    const storedParlays = localStorage.getItem('worldcup_parlays');
+
     if (stored) {
       this.bets = JSON.parse(stored);
+      this.parlays = storedParlays ? JSON.parse(storedParlays) : [];
     } else {
       try {
-        const res = await fetch('data/bets.json');
-        const data = await res.json();
-        this.bets = data.bets || [];
-        this.save();
+        const result = await GitHub.pullBets();
+        if (result && result.bets) {
+          this.bets = result.bets;
+          this.parlays = result.parlays || [];
+          this.save();
+          this.saveParlays();
+        } else {
+          this.bets = [];
+          this.parlays = [];
+        }
       } catch (e) {
-        this.bets = [];
+        try {
+          const res = await fetch('data/bets.json');
+          const data = await res.json();
+          this.bets = data.bets || [];
+          this.parlays = data.parlays || [];
+          this.save();
+          this.saveParlays();
+        } catch (e2) {
+          this.bets = [];
+          this.parlays = [];
+        }
       }
-    }
-
-    const storedParlays = localStorage.getItem('worldcup_parlays');
-    if (storedParlays) {
-      this.parlays = JSON.parse(storedParlays);
-    } else {
-      this.parlays = [];
     }
 
     this.bindEvents();
@@ -72,10 +84,10 @@ const App = {
     const pullBtn = document.getElementById('btn-pull');
     const configured = GitHub.isConfigured();
     syncBtn.disabled = false;
-    pullBtn.disabled = !configured;
+    pullBtn.disabled = false;
     if (!configured) {
       syncBtn.title = 'Save to local file';
-      pullBtn.title = 'Configure GitHub first (click gear icon)';
+      pullBtn.title = 'Pull from GitHub (read-only)';
     } else {
       syncBtn.title = 'Push to GitHub';
       pullBtn.title = 'Pull from GitHub';
