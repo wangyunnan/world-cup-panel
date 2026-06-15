@@ -5,5 +5,812 @@
     "startDate": "2026-06-11",
     "location": "USA / Canada / Mexico"
   },
-  "bets": []
+  "bets": [],
+  "parlays": [
+    {
+      "id": 1002,
+      "type": "parlay",
+      "legs": [
+        {
+          "matchDate": "2026-06-13",
+          "stage": "Group B",
+          "homeTeam": "加拿大",
+          "awayTeam": "波黑",
+          "betType": "score",
+          "prediction": {
+            "home": 3,
+            "away": 0
+          },
+          "predictionResult": "home_win",
+          "odds": 15.5,
+          "actualScore": {
+            "home": 1,
+            "away": 1
+          },
+          "actualResult": "draw",
+          "actualHalffull": null,
+          "won": false
+        },
+        {
+          "matchDate": "2026-06-13",
+          "stage": "Group B",
+          "homeTeam": "加拿大",
+          "awayTeam": "波黑",
+          "betType": "score",
+          "prediction": {
+            "home": 3,
+            "away": 1
+          },
+          "predictionResult": "home_win",
+          "odds": 15,
+          "actualScore": {
+            "home": 1,
+            "away": 1
+          },
+          "actualResult": "draw",
+          "actualHalffull": null,
+          "won": false
+        },
+        {
+          "matchDate": "2026-06-13",
+          "stage": "Group B",
+          "homeTeam": "加拿大",
+          "awayTeam": "波黑",
+          "betType": "score",
+          "prediction": {
+            "home": 2,
+            "away": 2
+          },
+          "predictionResult": "draw",
+          "odds": 17.5,
+          "actualScore": {
+            "home": 1,
+            "away": 1
+          },
+          "actualResult": "draw",
+          "actualHalffull": null,
+          "won": false
+        },
+        {
+          "matchDate": "2026-06-13",
+          "stage": "Group D",
+          "homeTeam": "美国",
+          "awayTeam": "巴拉圭",
+          "betType": "score",
+          "prediction": {
+            "home": 1,
+            "away": 0,
+            "handicap": 0
+          },
+          "predictionResult": "home_win",
+          "odds": 5.8,
+          "actualScore": {
+            "home": 4,
+            "away": 1
+          },
+          "actualResult": "home_win",
+          "actualHalffull": null,
+          "won": false
+        }
+      ],
+      "matchCount": 2,
+      "combinedOdds": 0,
+      "amount": 30,
+      "legCount": 3,
+      "totalCost": 30,
+      "payout": 0,
+      "profit": -30,
+      "status": "settled",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "id": 1003,
+      "type": "parlay",
+      "legs": [
+        {
+          "matchDate": "2026-06-13",
+          "stage": "Group B",
+          "homeTeam": "加拿大",
+          "awayTeam": "波黑",
+          "betType": "score",
+          "prediction": {
+            "home": 2,
+            "away": 2
+          },
+          "predictionResult": "draw",
+          "odds": 17.5,
+          "actualScore": {
+            "home": 1,
+            "away": 1
+          },
+          "actualResult": "draw",
+          "actualHalffull": null,
+          "won": false
+        },
+        {
+          "matchDate": "2026-06-13",
+          "stage": "Group B",
+          "homeTeam": "加拿大",
+          "awayTeam": "波黑",
+          "betType": "score",
+          "prediction": {
+            "home": 3,
+            "away": 1
+          },
+          "predictionResult": "home_win",
+          "odds": 15,
+          "actualScore": {
+            "home": 1,
+            "away": 1
+          },
+          "actualResult": "draw",
+          "actualHalffull": null,
+          "won": false
+        },
+        {
+          "matchDate": "2026-06-13",
+          "stage": "Group B",
+          "homeTeam": "加拿大",
+          "awayTeam": "波黑",
+          "betType": "score",
+          "prediction": {
+            "home": 3,
+            "away": 0
+          },
+          "predictionResult": "home_win",
+          "odds": 15.5,
+          "actualScore": {
+            "home": 1,
+            "away": 1
+          },
+          "actualResult": "draw",
+          "actualHalffull": null,
+          "won": false
+        },
+        {
+          "matchDate": "2026-06-13",
+          "stage": "Group D",
+          "homeTeam": "美国",
+          "awayTeam": "巴拉圭",
+          "betType": "result",
+          "prediction": {
+            "wdl": "draw",
+            "handicap": -1
+          },
+          "predictionResult": "draw",
+          "odds": 3.08,
+          "actualScore": {
+            "home": 4,
+            "away": 1
+          },
+          "actualResult": "home_win",
+          "actualHalffull": null,
+          "won": false
+        }
+      ],
+      "matchCount": 2,
+      "combinedOdds": 0,
+      "amount": 30,
+      "legCount": 3,
+      "totalCost": 30,
+      "payout": 0,
+      "profit": -30,
+      "status": "settled",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "id": 1004,
+      "type": "parlay",
+      "legs": [
+        {
+          "matchDate": "2026-06-14",
+          "stage": "Group C",
+          "homeTeam": "巴西",
+          "awayTeam": "摩洛哥",
+          "betType": "result",
+          "prediction": {
+            "wdl": "win",
+            "handicap": 0
+          },
+          "predictionResult": "win",
+          "odds": 1.49,
+          "actualScore": {
+            "home": 1,
+            "away": 1
+          },
+          "actualResult": "draw",
+          "actualHalffull": null,
+          "won": false
+        },
+        {
+          "matchDate": "2026-06-14",
+          "stage": "Group C",
+          "homeTeam": "海地",
+          "awayTeam": "苏格兰",
+          "betType": "result",
+          "prediction": {
+            "wdl": "draw",
+            "handicap": 0
+          },
+          "predictionResult": "draw",
+          "odds": 4.12,
+          "actualScore": {
+            "home": 0,
+            "away": 1
+          },
+          "actualResult": "away_win",
+          "actualHalffull": null,
+          "won": false
+        },
+        {
+          "matchDate": "2026-06-14",
+          "stage": "Group D",
+          "homeTeam": "澳大利亚",
+          "awayTeam": "土耳其",
+          "betType": "result",
+          "prediction": {
+            "wdl": "win",
+            "handicap": 0
+          },
+          "predictionResult": "win",
+          "odds": 5.15,
+          "actualScore": {
+            "home": 2,
+            "away": 0
+          },
+          "actualResult": "home_win",
+          "actualHalffull": null,
+          "won": true
+        }
+      ],
+      "matchCount": 3,
+      "combinedOdds": 5.15,
+      "amount": 20,
+      "legCount": 1,
+      "totalCost": 20,
+      "payout": 0,
+      "profit": -20,
+      "status": "settled",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "id": 1005,
+      "type": "parlay",
+      "legs": [
+        {
+          "matchDate": "2026-06-14",
+          "stage": "Group B",
+          "homeTeam": "卡塔尔",
+          "awayTeam": "瑞士",
+          "betType": "score",
+          "prediction": {
+            "home": 2,
+            "away": 0
+          },
+          "predictionResult": "home_win",
+          "odds": 1,
+          "actualScore": {
+            "home": 1,
+            "away": 1
+          },
+          "actualResult": "draw",
+          "actualHalffull": null,
+          "won": false
+        },
+        {
+          "matchDate": "2026-06-14",
+          "stage": "Group B",
+          "homeTeam": "卡塔尔",
+          "awayTeam": "瑞士",
+          "betType": "score",
+          "prediction": {
+            "home": 1,
+            "away": 1
+          },
+          "predictionResult": "draw",
+          "odds": 1,
+          "actualScore": {
+            "home": 1,
+            "away": 1
+          },
+          "actualResult": "draw",
+          "actualHalffull": null,
+          "won": true
+        },
+        {
+          "matchDate": "2026-06-14",
+          "stage": "Group C",
+          "homeTeam": "巴西",
+          "awayTeam": "摩洛哥",
+          "betType": "score",
+          "prediction": {
+            "home": 2,
+            "away": 1
+          },
+          "predictionResult": "home_win",
+          "odds": 1,
+          "actualScore": {
+            "home": 1,
+            "away": 1
+          },
+          "actualResult": "draw",
+          "actualHalffull": null,
+          "won": false
+        },
+        {
+          "matchDate": "2026-06-14",
+          "stage": "Group C",
+          "homeTeam": "巴西",
+          "awayTeam": "摩洛哥",
+          "betType": "score",
+          "prediction": {
+            "home": 0,
+            "away": 1
+          },
+          "predictionResult": "away_win",
+          "odds": 1,
+          "actualScore": {
+            "home": 1,
+            "away": 1
+          },
+          "actualResult": "draw",
+          "actualHalffull": null,
+          "won": false
+        }
+      ],
+      "matchCount": 2,
+      "combinedOdds": 1,
+      "amount": 40,
+      "legCount": 4,
+      "totalCost": 40,
+      "payout": 0,
+      "profit": -40,
+      "status": "settled",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "id": 1006,
+      "type": "parlay",
+      "legs": [
+        {
+          "matchDate": "2026-06-15",
+          "stage": "Group E",
+          "homeTeam": "德国",
+          "awayTeam": "库拉索",
+          "betType": "score",
+          "prediction": {
+            "home": 3,
+            "away": 0
+          },
+          "predictionResult": "home_win",
+          "odds": 4.9,
+          "actualScore": {
+            "home": 7,
+            "away": 1
+          },
+          "actualResult": "home_win",
+          "actualHalffull": null,
+          "won": false
+        },
+        {
+          "matchDate": "2026-06-15",
+          "stage": "Group E",
+          "homeTeam": "德国",
+          "awayTeam": "库拉索",
+          "betType": "score",
+          "prediction": {
+            "home": 4,
+            "away": 1
+          },
+          "predictionResult": "home_win",
+          "odds": 14,
+          "actualScore": {
+            "home": 7,
+            "away": 1
+          },
+          "actualResult": "home_win",
+          "actualHalffull": null,
+          "won": false
+        },
+        {
+          "matchDate": "2026-06-15",
+          "stage": "Group F",
+          "homeTeam": "荷兰",
+          "awayTeam": "日本",
+          "betType": "score",
+          "prediction": {
+            "home": 2,
+            "away": 0
+          },
+          "predictionResult": "home_win",
+          "odds": 10,
+          "actualScore": {
+            "home": 2,
+            "away": 2
+          },
+          "actualResult": "draw",
+          "actualHalffull": null,
+          "won": false
+        },
+        {
+          "matchDate": "2026-06-15",
+          "stage": "Group F",
+          "homeTeam": "荷兰",
+          "awayTeam": "日本",
+          "betType": "score",
+          "prediction": {
+            "home": 3,
+            "away": 0
+          },
+          "predictionResult": "home_win",
+          "odds": 20,
+          "actualScore": {
+            "home": 2,
+            "away": 2
+          },
+          "actualResult": "draw",
+          "actualHalffull": null,
+          "won": false
+        }
+      ],
+      "matchCount": 2,
+      "combinedOdds": 0,
+      "amount": 40,
+      "legCount": 4,
+      "totalCost": 40,
+      "payout": 0,
+      "profit": -40,
+      "status": "settled",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "id": 1007,
+      "type": "parlay",
+      "legs": [
+        {
+          "matchDate": "2026-06-15",
+          "stage": "Group F",
+          "homeTeam": "荷兰",
+          "awayTeam": "日本",
+          "betType": "half_full",
+          "prediction": {
+            "halffull": "平-胜"
+          },
+          "predictionResult": "平-胜",
+          "odds": 4.68,
+          "actualScore": null,
+          "actualResult": null,
+          "actualHalffull": "平-平",
+          "won": false
+        },
+        {
+          "matchDate": "2026-06-15",
+          "stage": "Group E",
+          "homeTeam": "科特迪瓦",
+          "awayTeam": "厄瓜多尔",
+          "betType": "half_full",
+          "prediction": {
+            "halffull": "胜-平"
+          },
+          "predictionResult": "胜-平",
+          "odds": 14,
+          "actualScore": null,
+          "actualResult": null,
+          "actualHalffull": "平-胜",
+          "won": false
+        },
+        {
+          "matchDate": "2026-06-15",
+          "stage": "Group F",
+          "homeTeam": "瑞典",
+          "awayTeam": "突尼斯",
+          "betType": "half_full",
+          "prediction": {
+            "halffull": "胜-胜"
+          },
+          "predictionResult": "胜-胜",
+          "odds": 2.85,
+          "actualScore": null,
+          "actualResult": null,
+          "actualHalffull": "胜-胜",
+          "won": true
+        }
+      ],
+      "matchCount": 3,
+      "combinedOdds": 2.85,
+      "amount": 20,
+      "legCount": 1,
+      "totalCost": 20,
+      "payout": 0,
+      "profit": -20,
+      "status": "settled",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "id": 1008,
+      "type": "parlay",
+      "legs": [
+        {
+          "matchDate": "2026-06-16",
+          "stage": "Group H",
+          "homeTeam": "西班牙",
+          "awayTeam": "佛得角",
+          "betType": "score",
+          "prediction": {
+            "home": 2,
+            "away": 0
+          },
+          "predictionResult": "home_win",
+          "odds": 6.7,
+          "actualScore": null,
+          "actualResult": null,
+          "actualHalffull": null,
+          "won": null
+        },
+        {
+          "matchDate": "2026-06-16",
+          "stage": "Group H",
+          "homeTeam": "西班牙",
+          "awayTeam": "佛得角",
+          "betType": "score",
+          "prediction": {
+            "home": 3,
+            "away": 1
+          },
+          "predictionResult": "home_win",
+          "odds": 9.75,
+          "actualScore": null,
+          "actualResult": null,
+          "actualHalffull": null,
+          "won": null
+        },
+        {
+          "matchDate": "2026-06-16",
+          "stage": "Group H",
+          "homeTeam": "沙特",
+          "awayTeam": "乌拉圭",
+          "betType": "score",
+          "prediction": {
+            "home": 0,
+            "away": 1
+          },
+          "predictionResult": "away_win",
+          "odds": 6,
+          "actualScore": null,
+          "actualResult": null,
+          "actualHalffull": null,
+          "won": null
+        },
+        {
+          "matchDate": "2026-06-16",
+          "stage": "Group H",
+          "homeTeam": "沙特",
+          "awayTeam": "乌拉圭",
+          "betType": "score",
+          "prediction": {
+            "home": 0,
+            "away": 2
+          },
+          "predictionResult": "away_win",
+          "odds": 5.3,
+          "actualScore": null,
+          "actualResult": null,
+          "actualHalffull": null,
+          "won": null
+        }
+      ],
+      "matchCount": 2,
+      "combinedOdds": 58.5,
+      "amount": 40,
+      "legCount": 4,
+      "totalCost": 40,
+      "payout": 0,
+      "profit": 0,
+      "status": "pending",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "id": 1009,
+      "type": "parlay",
+      "legs": [
+        {
+          "matchDate": "2026-06-16",
+          "stage": "Group H",
+          "homeTeam": "西班牙",
+          "awayTeam": "佛得角",
+          "betType": "half_full",
+          "prediction": {
+            "halffull": "胜-胜"
+          },
+          "predictionResult": "胜-胜",
+          "odds": 1.2,
+          "actualScore": null,
+          "actualResult": null,
+          "actualHalffull": null,
+          "won": null
+        },
+        {
+          "matchDate": "2026-06-16",
+          "stage": "Group G",
+          "homeTeam": "比利时",
+          "awayTeam": "埃及",
+          "betType": "half_full",
+          "prediction": {
+            "halffull": "平-胜"
+          },
+          "predictionResult": "平-胜",
+          "odds": 3.9,
+          "actualScore": null,
+          "actualResult": null,
+          "actualHalffull": null,
+          "won": null
+        },
+        {
+          "matchDate": "2026-06-16",
+          "stage": "Group H",
+          "homeTeam": "沙特",
+          "awayTeam": "乌拉圭",
+          "betType": "half_full",
+          "prediction": {
+            "halffull": "平-负"
+          },
+          "predictionResult": "平-负",
+          "odds": 3.6,
+          "actualScore": null,
+          "actualResult": null,
+          "actualHalffull": null,
+          "won": null
+        },
+        {
+          "matchDate": "2026-06-16",
+          "stage": "Group G",
+          "homeTeam": "伊朗",
+          "awayTeam": "新西兰",
+          "betType": "half_full",
+          "prediction": {
+            "halffull": "胜-胜"
+          },
+          "predictionResult": "胜-胜",
+          "odds": 2.5,
+          "actualScore": null,
+          "actualResult": null,
+          "actualHalffull": null,
+          "won": null
+        }
+      ],
+      "matchCount": 4,
+      "combinedOdds": 42.12,
+      "amount": 20,
+      "legCount": 1,
+      "totalCost": 20,
+      "payout": 0,
+      "profit": 0,
+      "status": "pending",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "id": 1010,
+      "type": "parlay",
+      "legs": [
+        {
+          "matchDate": "2026-06-12",
+          "stage": "Group A",
+          "homeTeam": "墨西哥",
+          "awayTeam": "南非",
+          "betType": "score",
+          "prediction": {
+            "home": 1,
+            "away": 0
+          },
+          "predictionResult": "home_win",
+          "odds": 5.65,
+          "actualScore": {
+            "home": 2,
+            "away": 0
+          },
+          "actualResult": "home_win",
+          "actualHalffull": null,
+          "won": false
+        },
+        {
+          "matchDate": "2026-06-12",
+          "stage": "Group A",
+          "homeTeam": "墨西哥",
+          "awayTeam": "南非",
+          "betType": "score",
+          "prediction": {
+            "home": 2,
+            "away": 0
+          },
+          "predictionResult": "home_win",
+          "odds": 4.25,
+          "actualScore": {
+            "home": 2,
+            "away": 0
+          },
+          "actualResult": "home_win",
+          "actualHalffull": null,
+          "won": true
+        },
+        {
+          "matchDate": "2026-06-12",
+          "stage": "Group A",
+          "homeTeam": "墨西哥",
+          "awayTeam": "南非",
+          "betType": "score",
+          "prediction": {
+            "home": 2,
+            "away": 1
+          },
+          "predictionResult": "home_win",
+          "odds": 5.5,
+          "actualScore": {
+            "home": 2,
+            "away": 0
+          },
+          "actualResult": "home_win",
+          "actualHalffull": null,
+          "won": false
+        },
+        {
+          "matchDate": "2026-06-12",
+          "stage": "Group A",
+          "homeTeam": "韩国",
+          "awayTeam": "捷克",
+          "betType": "score",
+          "prediction": {
+            "home": 2,
+            "away": 0
+          },
+          "predictionResult": "home_win",
+          "odds": 12,
+          "actualScore": {
+            "home": 2,
+            "away": 1
+          },
+          "actualResult": "home_win",
+          "actualHalffull": null,
+          "won": false
+        },
+        {
+          "matchDate": "2026-06-12",
+          "stage": "Group A",
+          "homeTeam": "韩国",
+          "awayTeam": "捷克",
+          "betType": "score",
+          "prediction": {
+            "home": 2,
+            "away": 1
+          },
+          "predictionResult": "home_win",
+          "odds": 7,
+          "actualScore": {
+            "home": 2,
+            "away": 1
+          },
+          "actualResult": "home_win",
+          "actualHalffull": null,
+          "won": true
+        }
+      ],
+      "matchCount": 2,
+      "combinedOdds": 29.75,
+      "amount": 36,
+      "legCount": 6,
+      "totalCost": 36,
+      "payout": 179,
+      "profit": 143,
+      "status": "settled",
+      "confidence": "medium",
+      "notes": ""
+    }
+  ]
 }
