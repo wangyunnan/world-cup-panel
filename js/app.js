@@ -131,11 +131,6 @@ const App = {
       this.saveSettings();
     });
 
-    document.getElementById('filter-stage').addEventListener('change', () => this.render());
-    document.getElementById('filter-team').addEventListener('change', () => this.render());
-    document.getElementById('filter-status').addEventListener('change', () => this.render());
-    document.getElementById('filter-result').addEventListener('change', () => this.render());
-
     document.querySelectorAll('.bet-table th[data-sort]').forEach(th => {
       th.addEventListener('click', () => {
         const field = th.dataset.sort;
@@ -264,22 +259,6 @@ const App = {
     }));
 
     let filtered = [...this.bets, ...parlayRows];
-    const stage = document.getElementById('filter-stage').value;
-    const team = document.getElementById('filter-team').value;
-    const status = document.getElementById('filter-status').value;
-    const result = document.getElementById('filter-result').value;
-
-    if (stage) filtered = filtered.filter(b => {
-      if (b._parlay) return b.legs.some(l => l.stage === stage);
-      return b.stage === stage;
-    });
-    if (team) filtered = filtered.filter(b => {
-      if (b._parlay) return b.legs.some(l => l.homeTeam === team || l.awayTeam === team);
-      return b.homeTeam === team || b.awayTeam === team;
-    });
-    if (status) filtered = filtered.filter(b => b.status === status);
-    if (result === 'win') filtered = filtered.filter(b => b.status === 'settled' && b.profit > 0);
-    if (result === 'lose') filtered = filtered.filter(b => b.status === 'settled' && b.profit <= 0);
 
     filtered.sort((a, b) => {
       let va = a[this.sortField];
@@ -293,31 +272,7 @@ const App = {
     return filtered;
   },
 
-  populateFilters() {
-    const allTeams = [
-      ...this.bets.flatMap(b => [b.homeTeam, b.awayTeam]),
-      ...this.parlays.flatMap(p => p.legs.flatMap(l => [l.homeTeam, l.awayTeam]))
-    ];
-    const allStages = [
-      ...this.bets.map(b => b.stage),
-      ...this.parlays.flatMap(p => p.legs.map(l => l.stage))
-    ];
-    const stages = [...new Set(allStages)].sort();
-    const teams = [...new Set(allTeams)].sort();
-
-    const stageSelect = document.getElementById('filter-stage');
-    const currentStage = stageSelect.value;
-    stageSelect.innerHTML = '<option value="">All Stages</option>' +
-      stages.map(s => `<option value="${s}" ${s === currentStage ? 'selected' : ''}>${s}</option>`).join('');
-
-    const teamSelect = document.getElementById('filter-team');
-    const currentTeam = teamSelect.value;
-    teamSelect.innerHTML = '<option value="">All Teams</option>' +
-      teams.map(t => `<option value="${t}" ${t === currentTeam ? 'selected' : ''}>${t}</option>`).join('');
-  },
-
   render() {
-    this.populateFilters();
     const filtered = this.getFilteredBets();
     const tbody = document.getElementById('bet-table-body');
     const emptyState = document.getElementById('empty-state');
