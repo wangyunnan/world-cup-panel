@@ -26,25 +26,23 @@ const App = {
       this.teamCodes = {};
     }
 
-    const stored = localStorage.getItem('worldcup_bets');
-    const storedParlays = localStorage.getItem('worldcup_parlays');
-
-    if (stored) {
-      this.bets = JSON.parse(stored);
-      this.parlays = storedParlays ? JSON.parse(storedParlays) : [];
-    } else {
-      try {
-        const result = await GitHub.pullBets();
-        if (result && result.bets) {
-          this.bets = result.bets;
-          this.parlays = result.parlays || [];
-          this.save();
-          this.saveParlays();
-        } else {
-          this.bets = [];
-          this.parlays = [];
-        }
-      } catch (e) {
+    try {
+      const result = await GitHub.pullBets();
+      if (result && result.bets) {
+        this.bets = result.bets;
+        this.parlays = result.parlays || [];
+        this.save();
+        this.saveParlays();
+      } else {
+        throw new Error('empty');
+      }
+    } catch (e) {
+      const stored = localStorage.getItem('worldcup_bets');
+      const storedParlays = localStorage.getItem('worldcup_parlays');
+      if (stored) {
+        this.bets = JSON.parse(stored);
+        this.parlays = storedParlays ? JSON.parse(storedParlays) : [];
+      } else {
         try {
           const res = await fetch('data/bets.json');
           const data = await res.json();
