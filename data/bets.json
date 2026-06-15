@@ -5,7 +5,31 @@
     "startDate": "2026-06-11",
     "location": "USA / Canada / Mexico"
   },
-  "bets": [],
+  "bets": [
+    {
+      "id": 1,
+      "matchDate": "2026-06-20",
+      "stage": "Group D",
+      "homeTeam": "美国",
+      "awayTeam": "澳大利亚",
+      "betType": "result",
+      "prediction": {
+        "wdl": "win",
+        "handicap": 0
+      },
+      "predictionResult": "win",
+      "odds": 100,
+      "amount": 1,
+      "actualScore": null,
+      "actualResult": null,
+      "actualHalffull": null,
+      "payout": 0,
+      "profit": 0,
+      "status": "pending",
+      "confidence": "medium",
+      "notes": ""
+    }
+  ],
   "parlays": [
     {
       "id": 1002,
