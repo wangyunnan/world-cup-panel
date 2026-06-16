@@ -823,6 +823,271 @@
       "status": "settled",
       "confidence": "medium",
       "notes": ""
+    },
+    {
+      "id": 1011,
+      "type": "parlay",
+      "legs": [
+        {
+          "matchDate": "2026-06-17",
+          "stage": "Group I",
+          "homeTeam": "法国",
+          "awayTeam": "塞内加尔",
+          "betType": "score",
+          "prediction": {
+            "home": 2,
+            "away": 0
+          },
+          "predictionResult": "home_win",
+          "odds": 6.5,
+          "actualScore": null,
+          "actualResult": null,
+          "actualHalffull": null,
+          "won": null
+        },
+        {
+          "matchDate": "2026-06-17",
+          "stage": "Group I",
+          "homeTeam": "法国",
+          "awayTeam": "塞内加尔",
+          "betType": "score",
+          "prediction": {
+            "home": 3,
+            "away": 0
+          },
+          "predictionResult": "home_win",
+          "odds": 9,
+          "actualScore": null,
+          "actualResult": null,
+          "actualHalffull": null,
+          "won": null
+        },
+        {
+          "matchDate": "2026-06-17",
+          "stage": "Group I",
+          "homeTeam": "伊拉克",
+          "awayTeam": "挪威",
+          "betType": "score",
+          "prediction": {
+            "home": 0,
+            "away": 3
+          },
+          "predictionResult": "away_win",
+          "odds": 6.5,
+          "actualScore": null,
+          "actualResult": null,
+          "actualHalffull": null,
+          "won": null
+        },
+        {
+          "matchDate": "2026-06-17",
+          "stage": "Group I",
+          "homeTeam": "伊拉克",
+          "awayTeam": "挪威",
+          "betType": "score",
+          "prediction": {
+            "home": -1,
+            "away": -1
+          },
+          "predictionResult": "draw",
+          "odds": 14,
+          "actualScore": null,
+          "actualResult": null,
+          "actualHalffull": null,
+          "won": null
+        }
+      ],
+      "matchCount": 2,
+      "combinedOdds": 126,
+      "amount": 40,
+      "legCount": 4,
+      "totalCost": 40,
+      "payout": 0,
+      "profit": 0,
+      "status": "pending",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "id": 1012,
+      "type": "parlay",
+      "legs": [
+        {
+          "matchDate": "2026-06-17",
+          "stage": "Group I",
+          "homeTeam": "法国",
+          "awayTeam": "塞内加尔",
+          "betType": "half_full",
+          "prediction": {
+            "halffull": "胜-胜"
+          },
+          "predictionResult": "胜-胜",
+          "odds": 1.87,
+          "actualScore": null,
+          "actualResult": null,
+          "actualHalffull": null,
+          "won": null
+        },
+        {
+          "matchDate": "2026-06-17",
+          "stage": "Group I",
+          "homeTeam": "伊拉克",
+          "awayTeam": "挪威",
+          "betType": "half_full",
+          "prediction": {
+            "halffull": "负-负"
+          },
+          "predictionResult": "负-负",
+          "odds": 1.46,
+          "actualScore": null,
+          "actualResult": null,
+          "actualHalffull": null,
+          "won": null
+        },
+        {
+          "matchDate": "2026-06-17",
+          "stage": "Group J",
+          "homeTeam": "阿根廷",
+          "awayTeam": "阿尔及利",
+          "betType": "half_full",
+          "prediction": {
+            "halffull": "平-胜"
+          },
+          "predictionResult": "平-胜",
+          "odds": 3.75,
+          "actualScore": null,
+          "actualResult": null,
+          "actualHalffull": null,
+          "won": null
+        },
+        {
+          "matchDate": "2026-06-17",
+          "stage": "Group J",
+          "homeTeam": "奥地利",
+          "awayTeam": "约旦",
+          "betType": "half_full",
+          "prediction": {
+            "halffull": "胜-胜"
+          },
+          "predictionResult": "胜-胜",
+          "odds": 1.8,
+          "actualScore": null,
+          "actualResult": null,
+          "actualHalffull": null,
+          "won": null
+        }
+      ],
+      "matchCount": 4,
+      "combinedOdds": 18.4289,
+      "amount": 20,
+      "legCount": 1,
+      "totalCost": 20,
+      "payout": 0,
+      "profit": 0,
+      "status": "pending",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "id": 1013,
+      "type": "parlay",
+      "legs": [
+        {
+          "matchDate": "2026-06-17",
+          "stage": "Group J",
+          "homeTeam": "阿根廷",
+          "awayTeam": "阿尔及利",
+          "betType": "score",
+          "prediction": {
+            "home": 2,
+            "away": 0
+          },
+          "predictionResult": "home_win",
+          "odds": 5.15,
+          "actualScore": null,
+          "actualResult": null,
+          "actualHalffull": null,
+          "won": null
+        },
+        {
+          "matchDate": "2026-06-17",
+          "stage": "Group J",
+          "homeTeam": "阿根廷",
+          "awayTeam": "阿尔及利",
+          "betType": "score",
+          "prediction": {
+            "home": 2,
+            "away": 1
+          },
+          "predictionResult": "home_win",
+          "odds": 6.25,
+          "actualScore": null,
+          "actualResult": null,
+          "actualHalffull": null,
+          "won": null
+        },
+        {
+          "matchDate": "2026-06-17",
+          "stage": "Group J",
+          "homeTeam": "奥地利",
+          "awayTeam": "约旦",
+          "betType": "score",
+          "prediction": {
+            "home": 2,
+            "away": 0
+          },
+          "predictionResult": "home_win",
+          "odds": 5,
+          "actualScore": null,
+          "actualResult": null,
+          "actualHalffull": null,
+          "won": null
+        },
+        {
+          "matchDate": "2026-06-17",
+          "stage": "Group J",
+          "homeTeam": "奥地利",
+          "awayTeam": "约旦",
+          "betType": "score",
+          "prediction": {
+            "home": 2,
+            "away": 1
+          },
+          "predictionResult": "home_win",
+          "odds": 7,
+          "actualScore": null,
+          "actualResult": null,
+          "actualHalffull": null,
+          "won": null
+        },
+        {
+          "matchDate": "2026-06-17",
+          "stage": "Group J",
+          "homeTeam": "奥地利",
+          "awayTeam": "约旦",
+          "betType": "score",
+          "prediction": {
+            "home": 3,
+            "away": 0
+          },
+          "predictionResult": "home_win",
+          "odds": 7.5,
+          "actualScore": null,
+          "actualResult": null,
+          "actualHalffull": null,
+          "won": null
+        }
+      ],
+      "matchCount": 2,
+      "combinedOdds": 46.875,
+      "amount": 24,
+      "legCount": 6,
+      "totalCost": 24,
+      "payout": 0,
+      "profit": 0,
+      "status": "pending",
+      "confidence": "medium",
+      "notes": ""
     }
   ]
 }
