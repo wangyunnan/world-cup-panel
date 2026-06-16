@@ -548,10 +548,13 @@
           },
           "predictionResult": "home_win",
           "odds": 6.7,
-          "actualScore": null,
-          "actualResult": null,
+          "actualScore": {
+            "home": 0,
+            "away": 0
+          },
+          "actualResult": "draw",
           "actualHalffull": null,
-          "won": null
+          "won": false
         },
         {
           "matchDate": "2026-06-16",
@@ -565,10 +568,13 @@
           },
           "predictionResult": "home_win",
           "odds": 9.75,
-          "actualScore": null,
-          "actualResult": null,
+          "actualScore": {
+            "home": 0,
+            "away": 0
+          },
+          "actualResult": "draw",
           "actualHalffull": null,
-          "won": null
+          "won": false
         },
         {
           "matchDate": "2026-06-16",
@@ -582,10 +588,13 @@
           },
           "predictionResult": "away_win",
           "odds": 6,
-          "actualScore": null,
-          "actualResult": null,
+          "actualScore": {
+            "home": 1,
+            "away": 1
+          },
+          "actualResult": "draw",
           "actualHalffull": null,
-          "won": null
+          "won": false
         },
         {
           "matchDate": "2026-06-16",
@@ -599,20 +608,23 @@
           },
           "predictionResult": "away_win",
           "odds": 5.3,
-          "actualScore": null,
-          "actualResult": null,
+          "actualScore": {
+            "home": 1,
+            "away": 1
+          },
+          "actualResult": "draw",
           "actualHalffull": null,
-          "won": null
+          "won": false
         }
       ],
       "matchCount": 2,
-      "combinedOdds": 58.5,
+      "combinedOdds": 0,
       "amount": 40,
       "legCount": 4,
       "totalCost": 40,
       "payout": 0,
-      "profit": 0,
-      "status": "pending",
+      "profit": -40,
+      "status": "settled",
       "confidence": "medium",
       "notes": ""
     },
@@ -649,8 +661,8 @@
           "odds": 3.9,
           "actualScore": null,
           "actualResult": null,
-          "actualHalffull": null,
-          "won": null
+          "actualHalffull": "平-平",
+          "won": false
         },
         {
           "matchDate": "2026-06-16",
@@ -665,8 +677,8 @@
           "odds": 3.6,
           "actualScore": null,
           "actualResult": null,
-          "actualHalffull": null,
-          "won": null
+          "actualHalffull": "平-平",
+          "won": false
         },
         {
           "matchDate": "2026-06-16",
@@ -681,8 +693,8 @@
           "odds": 2.5,
           "actualScore": null,
           "actualResult": null,
-          "actualHalffull": null,
-          "won": null
+          "actualHalffull": "平-平",
+          "won": false
         }
       ],
       "matchCount": 4,
