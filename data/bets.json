@@ -549,8 +549,8 @@
           "predictionResult": "home_win",
           "odds": 6.7,
           "actualScore": {
-            "home": 1,
-            "away": 1
+            "home": 0,
+            "away": 0
           },
           "actualResult": "draw",
           "actualHalffull": null,
@@ -569,8 +569,8 @@
           "predictionResult": "home_win",
           "odds": 9.75,
           "actualScore": {
-            "home": 1,
-            "away": 1
+            "home": 0,
+            "away": 0
           },
           "actualResult": "draw",
           "actualHalffull": null,
