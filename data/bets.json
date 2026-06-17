@@ -840,10 +840,13 @@
           },
           "predictionResult": "home_win",
           "odds": 6.5,
-          "actualScore": null,
-          "actualResult": null,
+          "actualScore": {
+            "home": 3,
+            "away": 1
+          },
+          "actualResult": "home_win",
           "actualHalffull": null,
-          "won": null
+          "won": false
         },
         {
           "matchDate": "2026-06-17",
@@ -857,10 +860,13 @@
           },
           "predictionResult": "home_win",
           "odds": 9,
-          "actualScore": null,
-          "actualResult": null,
+          "actualScore": {
+            "home": 3,
+            "away": 1
+          },
+          "actualResult": "home_win",
           "actualHalffull": null,
-          "won": null
+          "won": false
         },
         {
           "matchDate": "2026-06-17",
@@ -874,10 +880,13 @@
           },
           "predictionResult": "away_win",
           "odds": 6.5,
-          "actualScore": null,
-          "actualResult": null,
+          "actualScore": {
+            "home": 1,
+            "away": 4
+          },
+          "actualResult": "away_win",
           "actualHalffull": null,
-          "won": null
+          "won": false
         },
         {
           "matchDate": "2026-06-17",
@@ -891,20 +900,23 @@
           },
           "predictionResult": "draw",
           "odds": 14,
-          "actualScore": null,
-          "actualResult": null,
+          "actualScore": {
+            "home": 1,
+            "away": 4
+          },
+          "actualResult": "away_win",
           "actualHalffull": null,
-          "won": null
+          "won": false
         }
       ],
       "matchCount": 2,
-      "combinedOdds": 126,
+      "combinedOdds": 0,
       "amount": 40,
       "legCount": 4,
       "totalCost": 40,
       "payout": 0,
-      "profit": 0,
-      "status": "pending",
+      "profit": -40,
+      "status": "settled",
       "confidence": "medium",
       "notes": ""
     },
@@ -925,8 +937,8 @@
           "odds": 1.87,
           "actualScore": null,
           "actualResult": null,
-          "actualHalffull": null,
-          "won": null
+          "actualHalffull": "平-胜",
+          "won": false
         },
         {
           "matchDate": "2026-06-17",
@@ -941,8 +953,8 @@
           "odds": 1.46,
           "actualScore": null,
           "actualResult": null,
-          "actualHalffull": null,
-          "won": null
+          "actualHalffull": "负-负",
+          "won": true
         },
         {
           "matchDate": "2026-06-17",
@@ -957,8 +969,8 @@
           "odds": 3.75,
           "actualScore": null,
           "actualResult": null,
-          "actualHalffull": null,
-          "won": null
+          "actualHalffull": "胜-胜",
+          "won": false
         },
         {
           "matchDate": "2026-06-17",
@@ -973,18 +985,18 @@
           "odds": 1.8,
           "actualScore": null,
           "actualResult": null,
-          "actualHalffull": null,
-          "won": null
+          "actualHalffull": "胜-胜",
+          "won": true
         }
       ],
       "matchCount": 4,
-      "combinedOdds": 18.4289,
+      "combinedOdds": 2.628,
       "amount": 20,
       "legCount": 1,
       "totalCost": 20,
       "payout": 0,
-      "profit": 0,
-      "status": "pending",
+      "profit": -20,
+      "status": "settled",
       "confidence": "medium",
       "notes": ""
     },
@@ -1004,10 +1016,13 @@
           },
           "predictionResult": "home_win",
           "odds": 5.15,
-          "actualScore": null,
-          "actualResult": null,
+          "actualScore": {
+            "home": 3,
+            "away": 0
+          },
+          "actualResult": "home_win",
           "actualHalffull": null,
-          "won": null
+          "won": false
         },
         {
           "matchDate": "2026-06-17",
@@ -1021,10 +1036,13 @@
           },
           "predictionResult": "home_win",
           "odds": 6.25,
-          "actualScore": null,
-          "actualResult": null,
+          "actualScore": {
+            "home": 3,
+            "away": 0
+          },
+          "actualResult": "home_win",
           "actualHalffull": null,
-          "won": null
+          "won": false
         },
         {
           "matchDate": "2026-06-17",
@@ -1038,10 +1056,13 @@
           },
           "predictionResult": "home_win",
           "odds": 5,
-          "actualScore": null,
-          "actualResult": null,
+          "actualScore": {
+            "home": 3,
+            "away": 1
+          },
+          "actualResult": "home_win",
           "actualHalffull": null,
-          "won": null
+          "won": false
         },
         {
           "matchDate": "2026-06-17",
@@ -1055,10 +1076,13 @@
           },
           "predictionResult": "home_win",
           "odds": 7,
-          "actualScore": null,
-          "actualResult": null,
+          "actualScore": {
+            "home": 3,
+            "away": 1
+          },
+          "actualResult": "home_win",
           "actualHalffull": null,
-          "won": null
+          "won": false
         },
         {
           "matchDate": "2026-06-17",
@@ -1072,20 +1096,23 @@
           },
           "predictionResult": "home_win",
           "odds": 7.5,
-          "actualScore": null,
-          "actualResult": null,
+          "actualScore": {
+            "home": 3,
+            "away": 1
+          },
+          "actualResult": "home_win",
           "actualHalffull": null,
-          "won": null
+          "won": false
         }
       ],
       "matchCount": 2,
-      "combinedOdds": 46.875,
+      "combinedOdds": 0,
       "amount": 24,
       "legCount": 6,
       "totalCost": 24,
       "payout": 0,
-      "profit": 0,
-      "status": "pending",
+      "profit": -24,
+      "status": "settled",
       "confidence": "medium",
       "notes": ""
     }
