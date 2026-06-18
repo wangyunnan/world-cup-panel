@@ -5,7 +5,96 @@
     "startDate": "2026-06-11",
     "location": "USA / Canada / Mexico"
   },
-  "bets": [],
+  "bets": [
+    {
+      "id": 1,
+      "matchDate": "2026-06-18",
+      "stage": "Group K",
+      "homeTeam": "葡萄牙",
+      "awayTeam": "民主刚果",
+      "betType": "half_full",
+      "prediction": {
+        "halffull": "胜-胜"
+      },
+      "predictionResult": "胜-胜",
+      "odds": 1.5,
+      "amount": 20,
+      "actualScore": null,
+      "actualResult": null,
+      "actualHalffull": "平-平",
+      "payout": 0,
+      "profit": -20,
+      "status": "settled",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "id": 2,
+      "matchDate": "2026-06-18",
+      "stage": "Group L",
+      "homeTeam": "加纳",
+      "awayTeam": "巴拿马",
+      "betType": "half_full",
+      "prediction": {
+        "halffull": "平-胜"
+      },
+      "predictionResult": "平-胜",
+      "odds": 4.9,
+      "amount": 20,
+      "actualScore": null,
+      "actualResult": null,
+      "actualHalffull": "平-胜",
+      "payout": 98,
+      "profit": 78,
+      "status": "settled",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "id": 3,
+      "matchDate": "2026-06-18",
+      "stage": "Group L",
+      "homeTeam": "英格兰",
+      "awayTeam": "克罗地亚",
+      "betType": "half_full",
+      "prediction": {
+        "halffull": "平-胜"
+      },
+      "predictionResult": "平-胜",
+      "odds": 3.85,
+      "amount": 20,
+      "actualScore": null,
+      "actualResult": null,
+      "actualHalffull": "平-胜",
+      "payout": 77,
+      "profit": 57,
+      "status": "settled",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "id": 4,
+      "matchDate": "2026-06-18",
+      "stage": "Group K",
+      "homeTeam": "乌兹别克",
+      "awayTeam": "哥伦比亚",
+      "betType": "half_full",
+      "prediction": {
+        "halffull": "负-平"
+      },
+      "predictionResult": "负-平",
+      "odds": 21,
+      "amount": 20,
+      "actualScore": null,
+      "actualResult": null,
+      "actualHalffull": "负-负",
+      "payout": 0,
+      "profit": -20,
+      "status": "settled",
+      "confidence": "medium",
+      "notes": ""
+    }
+  ],
   "parlays": [
     {
       "id": 1002,
